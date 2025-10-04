@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book Library Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginPage">
+    <h2>Admin Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Admin Username" required>
+      <input type="password" id="password" placeholder="Admin Password" required>
+      <button type="submit">Login</button>
+      <div id="errorMsg"></div>
+    </form>
+  </div>
+
+  <div id="libraryApp" style="display:none;">
+    <button id="btnLogout">Logout</button>
+    <h1>Book Library with Folders</h1>
+
+    <input type="text" id="newFolderInput" placeholder="New Folder Name">
+    <button id="addFolderBtn">Add Folder</button>
+    <div id="folderList"></div>
+
+    <h2>Books in <span id="currentFolderName">All</span></h2>
+    <button id="showAllBtn">Show All Books</button>
+
+    <form id="addBookForm">
+      <input type="text" id="bookTitle" placeholder="Book Title" required>
+      <input type="text" id="bookAuthor" placeholder="Author" required>
+      <select id="folderSelect"></select>
+      <button type="submit">Add Book</button>
+    </form>
+    <div id="bookList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
