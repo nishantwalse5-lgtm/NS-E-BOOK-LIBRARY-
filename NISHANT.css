@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  color: #333;
+}
+#loginPage, #libraryApp {
+  max-width: 400px;
+  background: #fff;
+  margin: 60px auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+h1, h2 {
+  color: #6a11cb;
+}
+input, select, button {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid #6a11cb;
+  font-size: 1rem;
+}
+button {
+  background: #6a11cb;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(106,17,203,0.6);
+}
+button:hover {
+  background: #2575fc;
+}
+.folderItem, .bookItem {
+  background: #e5e9f7;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.folderItem.active {
+  background: #6a11cb;
+  color: white;
+}
+.folderItem button, .bookItem button {
+  background: transparent;
+  border: none;
+  color: #cc3333;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 8px;
+}
+#errorMsg {
+  color: #cc3333;
+  font-weight: 600;
+  margin-top: 10px;
+}
